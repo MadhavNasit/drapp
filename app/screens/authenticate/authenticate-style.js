@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { typography } from '../../theme/fonts/typography';
 import { color } from '../../theme/index';
 import Scale from '../../utils/Scale';
 
@@ -20,10 +21,11 @@ const AuthenticateStyle = StyleSheet.create({
     fontSize: Scale(21),
     lineHeight: Scale(24),
     textAlign: 'left',
-    fontWeight: 'bold',
+    fontFamily: typography.bold,
     marginBottom: Scale(12)
   },
   brandSlogan: {
+    fontFamily: typography.regular,
     color: color.primaryFont,
     fontSize: Scale(15),
     lineHeight: Scale(18),

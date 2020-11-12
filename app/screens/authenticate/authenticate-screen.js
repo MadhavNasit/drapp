@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { SafeAreaView, View, Text, TextInput, Keyboard, StatusBar, ScrollView, Alert, TouchableOpacity, Animated } from 'react-native';
 import TabComponent from '../../components/tab-component';
+import TextField from '../../components/text-field';
 import { color } from '../../theme';
 import Scale from '../../utils/Scale';
 
@@ -8,10 +9,11 @@ import Styles from './authenticate-style';
 
 const AuthenticateScreen = () => {
 
+  /**
+   * true - Sign Up
+   * false - Log In
+   */
   const [isFirstScreen, setIsFirstScreen] = useState(true);
-
-
-
 
   /**
    * Heading View - with brand name and brand slogan
@@ -24,8 +26,6 @@ const AuthenticateScreen = () => {
       </View>
     )
   }
-
-
 
   return (
     <SafeAreaView style={Styles.container}>
@@ -43,7 +43,13 @@ const AuthenticateScreen = () => {
           activeScreen={isFirstScreen}
         />
         <View>
-          {isFirstScreen ? (<Text>{`Sign Up`}</Text>) : (<Text>{`Log In`}</Text>)}
+          {isFirstScreen ? (
+
+            <TextField
+              placeholder={'asd'}
+            />
+
+          ) : (<Text>{`Log In`}</Text>)}
         </View>
       </View>
     </SafeAreaView>

@@ -6,6 +6,7 @@
 import React, { useRef, useState } from 'react';
 import { Animated, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { color } from '../theme';
+import { typography } from '../theme/fonts/typography';
 import Scale from '../utils/Scale';
 
 const TabComponent = (props) => {
@@ -105,7 +106,7 @@ const Styles = StyleSheet.create({
   screenName: {
     fontSize: Scale(14),
     lineHeight: Scale(16),
-    fontWeight: 'bold'
+    fontFamily: typography.bold
   },
   activeScreenName: {
     color: color.primaryFont,
