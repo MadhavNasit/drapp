@@ -7,7 +7,7 @@ import React, { useRef, useState } from 'react';
 import { Animated, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { color } from '../theme';
 import { typography } from '../theme/fonts/typography';
-import Scale from '../utils/Scale';
+import Scale, { verticalScale } from '../utils/Scale';
 
 const TabComponent = (props) => {
 
@@ -75,16 +75,16 @@ const Styles = StyleSheet.create({
   },
   tabView: {
     width: Scale(274),
-    height: Scale(38),
-    marginTop: -Scale(19),
-    borderRadius: Scale(19),
+    height: verticalScale(38),
+    marginTop: -verticalScale(19),
+    borderRadius: Scale(20),
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: color.white,
     shadowColor: 'rgba(0,0,0,0.9)',
     shadowOffset: {
       width: 0,
-      height: Scale(4),
+      height: verticalScale(4),
     },
     shadowOpacity: 0.15,
     shadowRadius: 2.22,
@@ -98,7 +98,7 @@ const Styles = StyleSheet.create({
   },
   activeTab: {
     position: 'absolute',
-    height: Scale(38),
+    height: verticalScale(38),
     width: Scale(145),
     backgroundColor: color.activeTab,
     borderRadius: Scale(19)

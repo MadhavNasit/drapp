@@ -1,0 +1,16 @@
+export const color = {
+  primary: 'rgb(44 ,89 ,112)',
+  white: "#fff",
+  black: "#000",
+  background: '#fff',
+  primaryFont: 'rgb(255,255,255)',
+  secondoryFont: 'rgb(62, 69, 79)',
+  placeholder: 'rgb(139,143,149)',
+  activeTab: 'rgb(230, 94, 82)',
+  buttonDisabled: 'rgb(44, 89, 112)',
+  paleGrey: 'rgb(246,248,250)',
+  facebook: 'rgb(48, 69, 140)',
+  google: 'rgb(230, 94, 82)',
+  apple: 'rgb( 62, 69, 79)',
+  charcoalGrey: 'rgb( 62, 69, 79)',
+}
